@@ -1,0 +1,227 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Set text color to white */
+    background-color: #000; /* Set background color to black */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://i.pinimg.com/736x/72/af/52/72af52e62641a9732c5a41bf06024bae.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    background-color: transparent; /* Initial translucent background */
+    border-radius: 8px;
+    transition: background-color 0.5s ease-in-out; /* Transition for the background color */
+    animation: pulse 2s infinite alternate; /* Animation for the pulsating effect */
+}
+
+.cta-button:hover {
+    background-color: deepskyblue;
+}
+.about-camera {
+    background-color: black;
+    padding: 100px 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.camera-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.camera-text {
+    max-width: 100%; /* Fill up the entire width */
+    margin-bottom: 20px; /* Add some bottom margin for spacing between text and images */
+}
+
+.camera-images {
+    display: inline-block; /* Display images in a row */
+}
+
+.camera-images img {
+    max-width: 100%;
+    height: 200px;
+    margin: 10px; /* Add some margin around each image */
+}
+
+.display-images {
+    display: flex; /* Display images in a row */
+    justify-content: center; /* Center the images horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.display-images img {
+    max-width: 800%;
+    height: 700px; /* Maintain the aspect ratio of the images */
+    margin: 10px; /* Add some margin around each image */
+}
+
+/* Revolutionary Display Section */
+.revolutionary-display {
+    background-color: black;
+    padding: 100px 20px;
+}
+
+.display-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Animation for pulsating effect */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* About the Phone Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.phone-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.comparison-tool {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Display Section */
+.display-section {
+    background-color: black;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.display-gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.display-video video {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.testimonials p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
